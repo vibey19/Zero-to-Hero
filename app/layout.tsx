@@ -4,6 +4,7 @@ import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import { useState } from "react";
 import Header from "@/components/Header";
+import Sidebar from "@/components/Sidebar";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -28,6 +29,7 @@ export default function RootLayout({
             totalEarnings={totalEarnings}
           />
           <div className="flex flex-1">
+            <Sidebar open={sidebarOpen} />
             <main className="flex-1 p-4 lg:p-8 ml-0 lg:ml-64 transition-all duration-300">
               {children}
             </main>
