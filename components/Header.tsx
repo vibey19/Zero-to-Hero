@@ -13,7 +13,6 @@ import {
   User,
   ChevronDown,
   LogIn,
-  LogOut,
 } from "lucide-react";
 import {
   DropdownMenu,
@@ -34,8 +33,7 @@ import {
   getUserBalance,
 } from "@/utils/db/actions";
 
-const clientId =
-  "BJKdDFkNtkWX87XqkuWrDu4rbkSvWyQZ5lswS0ucINxxcN0inRVW8zzKAywPPzgiOHP7_3PcfFwfpvcQvSdaLRs";
+const clientId = process.env.WEB3_AUTH_CLIENT_ID;
 
 const chainConfig = {
   chainNamespace: CHAIN_NAMESPACES.EIP155,
